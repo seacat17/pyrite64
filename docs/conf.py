@@ -27,6 +27,8 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.venv']
 _docs_dir = os.path.abspath(os.path.dirname(__file__))
 _doxygen_xml = os.path.join(_docs_dir, "_build", "doxygen", "xml")
 
+os.makedirs(_doxygen_xml, exist_ok=True)
+
 # Run on every build so the API docs always match the headers. Skip if the
 # doxygen binary is missing (e.g. minimal env) but XML already exists.
 try:
