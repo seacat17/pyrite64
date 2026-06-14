@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <SDL3/SDL.h>
 #include <future>
+#include <thread>
 
 #include <argparse/argparse.hpp>
 

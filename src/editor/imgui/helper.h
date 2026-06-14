@@ -767,7 +767,7 @@ namespace ImTable
     } else if constexpr (std::is_same_v<T, std::string>) {
       return ImGui::InputText("##", value);
     } else {
-      static_assert(false, "Unsupported type for typedInput");
+      static_assert(!sizeof(T*), "Unsupported type for typedInput");
     }
     return false;
   }

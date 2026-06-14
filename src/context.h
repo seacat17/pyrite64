@@ -4,6 +4,7 @@
 */
 #pragma once
 #include <algorithm>
+#include <atomic>
 #include <future>
 #include <vector>
 
